@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komoda</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
+        </div>
+        <h5 class="modal__title">Оставьте свой номер телефона,
+          мы свяжемся с Вами</h5>
+        <form class="modal__form" action="#">
+          <div class="modal__input-group">
+            <input name="modalName" class="modal__tel" type="tel" placeholder="Ваше имя">
+            <input name="modalTel" class="modal__tel" type="tel" placeholder="+7 (___) ___ - __ - __">
+          </div>
+          <button class="modal__button btn_green">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="img/logo/logo-header.png" alt=""></a>
+        <ul class="nav-collapse">
+          <li><a class="nav__company" href="#company">О компании</a></li>
+          <li><a class="nav__advantages" href="#advantages">Преимущества</a></li>
+          <li><a class="nav__catalog" href="#catalog">Каталог</a></li>
+          <li><a class="nav__order" href="#order">Как заказать</a></li>
+          <li><a class="nav__comments" href="#comments">Отзывы</a></li>
+          <li><a class="nav__contacts" href="#contacts">Контакты</a></li>
+        </ul>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger toggle right"><i class="material-icons teal-text">menu</i></a>
+        <a href="tel:+7 (495) 664-57-37" class="link-tel text-white">Звоните:   <b>+7 (495) 664-57-37</b></a>
+        <a class="nav__phone" href="tel:+7 (495) 664-57-37"><img src="img/phone.png" alt="phone"></a>
+      </div>
+    </nav>
+  </div>
+
+
+  <ul class="sidenav sidenav-close" id="mobile-demo">
+    <li><a class="sidenav__company" href="#company">О компании</a></li>
+    <li><a class="sidenav__advantages" href="#advantages">Преимущества</a></li>
+    <li><a class="sidenav__catalog" href="#catalog">Каталог</a></li>
+    <li><a class="sidenav__order" href="#order">Как заказать</a></li>
+    <li><a class="sidenav__comments" href="#comments">Отзывы</a></li>
+    <li><a class="sidenav__contacts" href="#contacts">Контакты</a></li>
+  </ul>
+  
+  <div class="top-section--big position-relative top-section">
+          <div class="top-section__text-1">
+            <h1 class="title title_big">Натяжные <br> потолки в Самаре</h1>
+            <h2 class="title title_subtitle text-green">Замеры проводим бесплатно</h2>
+          </div>
+          <div class="top-section__text-2">
+            <h4 class="title_small text-white">Светильники <br> в подарок!</h4>
+            <img src="img/present.png" alt="">
+          </div>
+          <img src="img/red-img.png" alt="" class="top-section__red-img">
+          <div class="top-section__calc">
+            <div class="top-section__calc__header">
+              <img src="img/calc.png" alt="">
+              <h6 class="top-section__calc__title title_small">Расчет стоимости</h6>
+            </div>
+            <div class="top-section__calc__num-box">
+              <p>Площадь потолка</p>
+              <div class="top-section__calc__input-box">
+                <input type="number" id="square" min="2" value="10">
+                <span>м²</span>
+              </div>
+            </div>
+            <div class="top-section__calc__num-box">
+              <p>Точек освещения</p>
+              <div class="top-section__calc__input-box">
+                <input type="number" id="quantity" min="1" value="2">
+                <span>шт.</span>
+              </div>
+            </div>
+            <div class="top-section__calc__num-box">
+              <p>Точек освещения</p>
+              <div class="top-section__calc__input-box">
+                <input type="number" value="5034" id="sum" disabled>
+                <span>руб.</span>
+              </div>
+            </div>
+            <form class="top-section__form" action="#">
+              <input type="text" placeholder="Ваше имя">
+              <input type="tel" placeholder="Ваш телефон">
+              <button class="btn btn_green">Вызвать замерщика</button>
+            </form>
+          </div>
+          <img src="img/top-section/men.png" alt="" class="top-section__men-img">
+    <div class="top-section__square">
+    </div>
+    <img src="img/top-section/bottom-line.png" alt="" class="top-section__bottom-line">
+  </div>
+  <div class="container-center">
+    <section id="advantages" class="advantage">
+      <h3 class="title title_medium">О достижениях</h3>
+      <div>
+        <img src="img/ico/offers/1.svg" alt="">
+        <p>Гарантия на изделие 15 лет</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/2.svg" alt="">
+        <p>Срок службы - 40 лет</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/3.svg" alt="">
+        <p>Консультация опытного специалиста</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/4.svg" alt="">
+        <p>Изготовление
+          от 1 дня</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/5.svg" alt="">
+        <p>Более 200 видов цветов и фактур</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/6.svg" alt="">
+        <p>Чистый монтаж
+          за один день</p>
+      </div>
+    </section>
+  </div>
+  <div class="container-center">
+    <h3 class="title title_medium text-center mt-section">О достижениях</h3>
+  </div>
+  <div class="container-center_big achievements">
+    <div class="container-center">
+      <div class="achievements__inner">
+        <div class="achievements__card">
+          <p class="achievements__num">15</p>
+          <p class="achievements__text">Более 15 лет на рынке</p>
+        </div>
+        <div class="achievements__card">
+          <p class="achievements__num">40000</p>
+          <p class="achievements__text">Более 4000 м² установленных натяжных потолков</p>
+        </div>
+        <div class="achievements__card">
+          <p class="achievements__num">1000</p>
+          <p class="achievements__text">Более 1000 довольных клиентов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-center">
+    <section id="advantages" class="advantage">
+      <h3 class="title title_medium">Преимущества натяжных потолков</h3>
+      <div>
+        <img src="img/ico/offers/1.svg" alt="">
+        <p>Хорошее решение
+          для ванной и кухни: отличное моется не способно впитывать влагу и запахи
+          </p>
+      </div>
+      <div>
+        <img src="img/ico/offers/2.svg" alt="">
+        <p>Не нужен специальный уход: не оставляют разводов</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/3.svg" alt="">
+        <p>Эстетичность: Современное и креативное решение для любого интерьера</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/4.svg" alt="">
+        <p>Огнеустойчивость: Натяжные потолки могут выдерживать низкие и высокие температуры и не склонны к горению</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/5.svg" alt="">
+        <p>Шумоподавление: Отличаются значительной звукоизоляцией</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/6.svg" alt="">
+        <p>Экологичность: Материалы совершенно не приносят вреда здоровью и не издают запахов</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-center catalog">
+    <h3 class="title title_medium text-center">Каталог</h3>
+    <div class="catalog__inner">
+      <div class="catalog__big-slider">
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/1.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Матовые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">В отличии от глянцевых, матовые потолки не имеют зеркальных свойств. Белый матовый потолок напротив не будет выделяться и брать на себя акцент интерьера. Это будет спокойный, выдержанный, классический ремонт</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/2.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Сатиновые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Золотая середина между матовым и глянцевым покрытием. Внешне и своими техническими характеристиками натяжной потолок сатин имеет схожесть с матовым потолком, но его поверхность не такая зернистая, как у матового, а абсолютно гладкая</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/3.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Глянцевые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Материал изготовления - пленка ПВХ, напоминающая своим видом лаковую поверхность с высокими отражающими способностями, благодаря которой можно зрительно увеличить площадь помещения</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/4.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Теневые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Они позволяют оставить в прошлом бросающиеся в глаза плинтусы по периметру всего помещения и заглушки, поскольку такие полотна исключают необходимость использования декоративных вставок. Визуально материал напоминает конструкцию из гипсокартона</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/5.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Бесщелевые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Бесщелевые натяжные потолки отличаются
+              от других отсутствием зазора между полотном
+              и стеной, что позволяет не использовать плинтус, вставку по периметру. Бесщелевые натяжные потолки являются аналогом потолка
+              из гипсокартона, поэтому, их еще называют «гипсотяжные»</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/6.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Парящие натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Это сочетание идеальной геометрии, четких углов и великолепного внешнего вида. Благодаря своему стильному и оригинальному виду они начинают пользоваться большой популярностью и успешно заменяют традиционную отделку из гипсокартона</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/7.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Двухуровневые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Натяжные полотна — это модное и эффективное решение для создания стильного интерьера.
+              А если Вы хотите отойти от традиционного оформления и создать невероятно красивый дизайн, то в этом вопросе популярностью пользуются двухуровневые натяжные потолки</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/8.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Световые линии</h6>
+            <p class="catalog__big-slider__slide__text">Это инновационный тип подсветки натяжного потолка, который в дизайне появился относительно недавно, но стремительно набирает популярность</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/9.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Контурные натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Контурная подсветка светодиодной лентой зонирует помещение, создает дополнительный свет или эффект парящего потолка, который увеличивает пространство</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/10.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Тканевые натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Для начала стоит отметить, что подобное покрытие отлично подходит для больших просторных помещений. Особенности материала дают возможность произвести большое бесшовное полотно</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/11.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Арт-печать</h6>
+            <p class="catalog__big-slider__slide__text">На натяжном потолке арт-печать создают с помощью широкоформатного принтера. Процесс печати обеспечивается особо стойкими сольвентными чернилами с пигментами, они в свою очередь обеспечивают реалистичную цветопередачу</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/12.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Эксклюзивные натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Мы создаем потолки с определенными особенностями и материалом. Так мы воплощаем в жизнь все ваши задумки!</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/13.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Цветные натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">В наше время среди натяжных потолков существует большая палитра цветов и решений. Для оформления комнаты можно подобрать яркие и насыщенные или, наоборот, пастельные оттенки. Все будет зависеть от дизайна самого помещения</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/14.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Криволинейная спайка, комбинация цветов</h6>
+            <p class="catalog__big-slider__slide__text">По сути, это комбинирование на одном уровне двух и более полотен совершенно различных цветов и фактур. Такое решение имитирует многоуровневое исполнение, однако не теряется высота помещения</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+        <div class="catalog__big-slider__slide">
+          <img src="img/big-slider/15.jpg" alt="" class="catalog__big-slider__slide__img">
+          <div class="catalog__big-slider__slide__r-col">
+            <h6 class="catalog__big-slider__slide__title">Резные натяжные потолки</h6>
+            <p class="catalog__big-slider__slide__text">Резные конструкции создаются посредством накладывания друг на друга полотен ПВХ, которые закрепляются на разных уровнях. При этом края отверстий получаются ровными и при натяжении не расползаются</p>
+            <button data-target="modal1" class="btn_green modal-trigger">Хочу такой же!</button>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__big-slider__nav">
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/1.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Сатиновые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/2.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Глянцевые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/3.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Теневые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/4.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Бесщелевые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/5.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Бесщелевые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/6.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Парящие натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/7.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Двухуровневые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/8.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Световые линии</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/9.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Контурные натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/10.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Тканевые натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/11.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Арт-печать</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/12.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Эксклюзивные натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/13.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Цветные натяжные потолки</p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/14.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Криволинейная спайка,комбинация цветов </p>
+        </div>
+        <div class="catalog__big-slider__nav__slide">
+          <img src="img/big-slider/15.jpg" alt="" class="catalog__big-slider__nav__slide__img">
+          <p class="catalog__big-slider__nav__text">Резные натяжные потолки</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="container-center">
+    <section id="advantages" class="advantage">
+      <h3 class="title title_medium">О достижениях</h3>
+      <div>
+        <img src="img/ico/offers/1.svg" alt="">
+        <p>Гарантия на изделие 15 лет</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/2.svg" alt="">
+        <p>Срок службы - 40 лет</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/3.svg" alt="">
+        <p>Консультация опытного специалиста</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/4.svg" alt="">
+        <p>Изготовление
+          от 1 дня</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/5.svg" alt="">
+        <p>Более 200 видов цветов и фактур</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/6.svg" alt="">
+        <p>Чистый монтаж
+          за один день</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-center">
+    <h3 class="title title_medium text-center mt-section">Этапы</h3>
+  </div>
+  <div class="container-center_big stages">
+    <div class="container-center">
+      <div class="stages__inner">
+        <div class="stages__card">
+          <p class="stages__num">01</p>
+          <img src="img/stages/1.png" alt="" class="stages__ico">
+          <p class="stages__text">Вы делаете расчет
+            у нас на сайте или оставляете заявку.
+            Вам перезванивает менеджер и составляет план расчета</p>
+        </div>
+        <div class="stages__card">
+          <p class="stages__num">02</p>
+          <img src="img/stages/2.png" alt="" class="stages__ico">
+          <p class="stages__text">Наш специалист приезжает к вами делает замер с подбором материала, который вы выбираете сами</p>
+        </div>
+        <div class="stages__card">
+          <p class="stages__num">03</p>
+          <img src="img/stages/3.png" alt="" class="stages__ico">
+          <p class="stages__text">Сотрудник и менеджер устанавливают точные сроки работы. Через некоторое время вы получаете готовый потолок</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-center_big">
+    <section id="company" class="about">
+      <div class="about__square">
+
+      </div>
+      <img src="img/about/room.jpg" alt="">
+      <div>
+        <h3 class="title title_medium">О компании</h3>
+        <p>Компания Komoda предлагает заказать натяжные потолки и шкафы-купе
+          в квартиру, частный дом, коттедж или офис. Натяжные потолки -  достаточно практичный и довольно популярный в наше время придать аккуратный
+          и стильный вид помещению. С другой стороны, с их помощью можно замаскировать небрежный вид или дополнить в уже готовый интерьер эксклюзивным решением. Также дополняем интерьер не только потолками, но и встраиваемыми шкафами. 
+
+          Наши специалисты проводят работы с исключительной осторожностью
+          и качественностью. Мы хорошо понимаем желания клиентов.
+          Сегодня большинство современных потребителей особо ценят в интерьере комфорт и функциональность в сочетании с приятным дизайном. И именно встраиваемый шкаф-купе стал фаворитом на современном мебельном рынке.  Благодаря современному виду, повышенной вместительности, способности сэкономить пространство он может полностью заменить гардеробное помещение. У нас также можно подобрать интерьерные решения, сочетаемые с натяжными потолками нужной расцветки и темы.
+        </p>
+      </div>
+    </section>
+  </div>
+  <div class="container-center">
+    <div class="reviews">
+      <h3 class="title title_medium">О компании</h3>
+      <div class="reviews__inner">
+        <div class="reviews__slide">
+          <img src="img/reviews/avarar/1.jpg" alt="" class="reviews__slide__avatar">
+          <h6 class="reviews__slide__title">Марина Сланцева</h6>
+          <p class="reviews__slide__text">Провели замеры и подписали договор сразу в один день. Получили приятную скидку! Никаких наценок, в установленный день приехали мастера и быстро справились. Очень остались довольны!</p>
+        </div>
+        <div class="reviews__slide">
+          <img src="img/reviews/avarar/2.jpg" alt="" class="reviews__slide__avatar">
+          <h6 class="reviews__slide__title">Сергей Леонов</h6>
+          <p class="reviews__slide__text">Мы долго думали, в какую компанию обратиться, так как собирались устанавливать потолок именно в новую квартиру. Увидели, что компания хорошо делает, ну и решили обратиться. Ребята хорошие, все качественно сделали</p>
+        </div>
+        <div class="reviews__slide">
+          <img src="img/reviews/avarar/3.jpg" alt="" class="reviews__slide__avatar">
+          <h6 class="reviews__slide__title">Александра Мизинцева</h6>
+          <p class="reviews__slide__text">Решили порадовать бабушку и установить натяжной потолок на кухне. Сразу приехали замерщики, сделали работу, мы сразу решили заключить договор, да еще и дополнительную скидку получили, очень приятно!
+            Будем у себя тоже устанавливать</p>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- тут квиз -->
+
+  <!-- тут квиз -->
+
+  <!-- этот блок без изсенений -->
+  <div class="container-center">
+    <section id="contacts" class="contact-block">
+      <div>
+        <p class="text-center"><span class="text-grey">Телефон</span><br><a href="tel:+74956645737" class="text-black">8 495 664 57 37</a></p>
+      </div>
+      <div>
+        <p class="text-center"><span class="text-grey">Адрес</span><br>Москва, Кремлевская набережная, 8</p>
+      </div>
+      <div>
+        <p class="text-center text-center--last"><span class="text-grey">Почта</span><br><a href="mailto:komoda@ya.ru" class="text-black">komoda@ya.ru</a></p>
+      </div>
+    </section>
+  </div>
+
+  <section class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A930eec61c1d0414c416f47df8847fd4105158558bde29d5e18f751e79301cc20&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+  </section>
+
+  <footer class="footer container-center_big bg-green">
+    <div class="container-center">
+      <div class="footer-inner">
+        <a href="#">
+          <img class="footer__logo" src="img/logo/logo-footer.png" alt="">
+        </a>
+  
+        <ul class="footer__nav">
+          <li class='footer__link'>
+            <a href="" class="text-white">О компании</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Преимущества</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Каталог</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Как заказать</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Отзывы</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Контакты</a>
+          </li>
+        </ul>
+        <a href="tel:+74956645737" class="footer__tel text-white"><p class="footer__tel--number">8 495 664 57 37</p></a>
+      </div>
+    </div>
+  </footer>
+  <!-- этот блок без изсенений -->
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="slick/slick/slick.js"></script>
+  <script src="materialize-css/dist/js/materialize.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
